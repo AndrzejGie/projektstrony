@@ -5,7 +5,7 @@ body {
 #main-page div {
     /*    background-color: red;*/
     border: 1px solid black;
-    height: 100px;
+/*    height: 100px;*/
 }
 
 #main-page {
@@ -21,7 +21,6 @@ body {
     display: grid;
     grid-template-columns: 20% auto;
     background-color: gainsboro;
-    
 }
 
 .logo i {
@@ -37,6 +36,7 @@ body {
 }
 
 .logo {
+    height: 100px;
     position: relative;
 }
 
@@ -82,27 +82,49 @@ body {
 
 .main-nav ul li {
     display: inline-block;
-    width: 20%;
+    width: 23%;
 }
-
-#buton {
-    display: inline-block;
-    width: 50%;
-    height: 50px;
-}
-
-/*
-.main-nav ul li:last-child {
-    float: right;
-}
-*/
 /*--------main-nav end----------*/
 
 
 /* ----------main-img3 start-------*/
 .main-img3 {
+    
+    text-align: center;
+    font-size: 20px;
+    color: cyan;
+    height: 200px;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 4;  
     display: grid;
+    grid-template-columns: auto auto auto;
+    overflow: hidden;
+}
+.main-img3back { 
+/*    height: 100%;*/
+    position: relative;
+    width: 200px;
+    background-image: url(../img/craft-beer-4116364_640.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+/*    box-sizing: border-box;*/
+}
+.img3text {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%; 
+    font-size: 50px;
+}
+.img3text:hover {
+    background-color: red;
+    opacity: 0.7;
+    color: azure;
 }
 /* -----main-img3 end--------*/
