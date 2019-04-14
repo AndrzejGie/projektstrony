@@ -3,15 +3,17 @@ body {
 }
 
 #main-page div {
-/*    background-color: red;*/
+    /*    background-color: red;*/
     border: 1px solid black;
     height: 100px;
 }
+
 #main-page {
     display: grid;
     grid-template-columns: auto auto auto;
     margin: 0 auto;
 }
+
 /*----------main-header start------------*/
 .main-header {
     grid-column-start: 1;
@@ -19,37 +21,88 @@ body {
     display: grid;
     grid-template-columns: 20% auto;
     background-color: gainsboro;
+    
 }
+
 .logo i {
     position: absolute;
     transform: translateY(-50%);
-    color: red;
     top: 50%;
     right: 0;
     left: 0;
     margin: 0 auto;
+    text-align: center;
+    color: red;
     font-size: 100px;
-    text-align: center
 }
+
 .logo {
     position: relative;
 }
+
+.rotate-center {
+    -webkit-animation: rotate-center 2s ease-in-out infinite both;
+    animation: rotate-center 2s ease-in-out infinite both;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
 /*-------------main-header end----------*/
 /*-------main-nav start---------*/
 .main-nav {
     grid-column-start: 1;
     grid-column-end: 4;
 }
+
 .main-nav ul {
     text-align: center;
 }
+
 .main-nav ul li {
     display: inline-block;
     width: 20%;
 }
+
+#buton {
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+}
+
 /*
 .main-nav ul li:last-child {
     float: right;
 }
 */
 /*--------main-nav end----------*/
+
+
+/* ----------main-img3 start-------*/
+.main-img3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+}
+/* -----main-img3 end--------*/
