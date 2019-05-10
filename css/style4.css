@@ -1,0 +1,80 @@
+.viewAll-calc {
+    background-color: whitesmoke;
+    height: auto;
+    width: 450px;
+    border: 2px solid black;
+    position: relative;
+    text-align: center;
+}
+
+/*
+.keyboard {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: 23%;
+}
+*/
+.buttons {
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+}
+
+.btnline1 {
+    width: 18%;
+}
+
+.btnline2 {
+    width: 18%;
+}
+
+.line3 {
+    text-align: left;
+    margin-right: 10px
+}
+
+.btnline3 {
+    width: 18%;
+}
+
+.line4 {
+    text-align: left;
+    margin-right: 10px
+}
+
+.btnline4 {
+    width: 18%;
+}
+
+.actions {
+    background-color: lightgray;
+}
+
+.zero {
+    width: 37%;
+}
+
+.sum {
+    position: absolute;
+    width: 16.5%;
+    margin-left: 2px;
+    top: 64%;
+    height: 36%
+}
+
+input {
+    width: 80%;
+    font-size: 75px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+button {
+    font-size: 50px;
+    height: 80%;
+}
+
+button:hover {
+    background-color: slategray;
+}
