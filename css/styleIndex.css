@@ -42,7 +42,7 @@ body {
 
 .rotate-center {
     -webkit-animation: rotate-center 2s ease-in-out infinite both;
-    animation: rotate-center 2s ease-in-out infinite both;
+    animation: rotate-center 5s linear infinite both;
 }
 
 @-webkit-keyframes rotate-center {
@@ -89,13 +89,12 @@ body {
 
 /* ----------main-img3 start-------*/
 .main-img3 {
-    
+    grid-column-start: 1;
+    grid-column-end: 4;  
     text-align: center;
     font-size: 20px;
     color: cyan;
     height: 200px;
-    grid-column-start: 1;
-    grid-column-end: 4;  
     display: grid;
     grid-template-columns: auto auto auto;
     overflow: hidden;
@@ -104,7 +103,7 @@ body {
 /*    height: 100%;*/
     position: relative;
     width: 200px;
-    background-image: url(../img/craft-beer-4116364_640.jpg);
+    background-image: url(../img/paper-1914901_640.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -124,7 +123,61 @@ body {
 }
 .img3text:hover {
     background-color: red;
-    opacity: 0.7;
+    opacity: 0.6;
     color: azure;
 }
 /* -----main-img3 end--------*/
+
+
+/*---------main-imgAndDesc start--------*/
+
+/*---------main-imgAndDesc end------*/
+
+/*-------main_icon start-------*/
+.main_icon {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.icon {
+    text-align: center;
+    font-size: 50px;
+    width: 24%;
+    display: inline-block;
+}
+.fa-facebook {
+    color: darkblue;
+    animation: rotate-scale-down 4s linear infinite none;
+    /* animation-direction: reverse; */
+}
+@keyframes rotate-scale-down {
+    0% {
+        transform: rotate(0)
+        scale(1)
+    }
+    50% {
+        transform: rotate(180deg)
+        scale(0.7)
+    }
+    100% {
+        transform: rotate(360deg)
+        scale(1)
+    }
+}
+.fa-github {
+    animation: move ease-in-out 4s;
+}
+   @keyframes move { 
+     0% { 
+         transform: translateX(0px)
+    }
+    100% {
+        transform: translateX(150px)
+    }
+}
+.fa-opera {
+    color: crimson;
+}
+.fa-bluetooth {
+    color: midnightblue;
+}
+/*------main_icon end-------*/

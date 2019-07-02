@@ -1,0 +1,11 @@
+body {
+    background-color: oldlace;
+}
+input {
+    color: red;
+    background-color: lightyellow;
+}
+.text1 {
+    height: 70px;
+    width: 700px;
+}
